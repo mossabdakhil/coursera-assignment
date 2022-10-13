@@ -53,7 +53,7 @@ body {
 @media (min-width: 992px) {
     .col-d-4 {
         float: left;
-        background-color: gray;
+        background-color: lightgray;
         border: 3px solid black;
         color: black;
         width: 31.33%;
@@ -64,7 +64,7 @@ body {
 @media (max-width: 991px) and (min-width: 768px) {
     .z {
         float: left;
-        background-color: gray;
+        background-color: lightgray;
         border: 3px solid black;
         color: black;
         width: 48%;
@@ -73,7 +73,7 @@ body {
     }
     .x {
         float: left;
-        background-color: gray;
+        background-color: lightgray;
         border: 3px solid black;
         color: black;
         width: 98%;
@@ -84,7 +84,7 @@ body {
 @media  (max-width: 767px) {
     .col-d-4 {
         float: left;
-        background-color: gray;
+        background-color: lightgray;
         border: 3px solid black;
         color: black;
         width: 100%;
