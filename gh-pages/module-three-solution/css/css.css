@@ -1,0 +1,40 @@
+nav {
+	background-color: darkslategray;
+	color: white;
+	border: 3px solid black;
+	box-sizing: border-box;
+}
+#brand {
+	font-size: 2em;
+	font-family: cursive;
+	line-height: 2em;
+}
+#content {
+	font-family: cursive;
+}
+#section {
+	padding: 20px;
+}
+#text {
+	background-color: darkslategray;
+	color: white;
+	font-family: cursive;
+	padding: 20px;
+	box-sizing: border-box;
+}
+.title {
+	font-size: 200%;
+	font-family: cursive;
+}
+.nav-link {
+	font-family: cursive;
+	background-color: white;
+	border: 1px solid black;
+	text-align: center;
+}
+@media (max-width: 576px) {
+	#text {
+		padding: 30px;
+		margin: 20px;
+	}
+}
