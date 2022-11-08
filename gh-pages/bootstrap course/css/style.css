@@ -1,0 +1,11 @@
+header {
+	background-color: #9b5dd6;
+}
+footer {
+	background-color: lightgray;
+}
+@media (max-width: 575.98px) {
+	.col-xs {
+		display: none;
+	}
+}
