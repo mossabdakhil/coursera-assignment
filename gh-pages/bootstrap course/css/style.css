@@ -4,8 +4,8 @@ header {
 footer {
 	background-color: lightgray;
 }
-@media (max-width: 575.98px) {
+/*@media (max-width: 575.98px) {
 	.col-xs {
 		display: none;
 	}
-}
+}*/
