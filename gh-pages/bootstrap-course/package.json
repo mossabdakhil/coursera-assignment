@@ -1,0 +1,20 @@
+{
+  "name": "bootstrap-course",
+  "version": "1.0.0",
+  "description": "\"This is a text directory to learn git and node\"",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://jogesh_k_muppala@bitbucket.org/jogesh_k_muppala/git-test.git)"
+  },
+  "author": "Mossaab Dakhil",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap-icons": "^1.10.2",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0"
+  }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="calcApp">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="angular.min.js"></script>
+	<script src="app.js"></script>
+	<title></title>
+</head>
+<body>
+	<!-- <h2>My First Angular App</h2>
+	<div ng-controller="myFirstController">
+		<input type="text" ng-model="name">
+		inside my input is: {{sayHello()}} {{name}}
+	</div>
+	<div>my first expression: {{87+87}}</div> -->
+
+	<h2>Name Calculator</h2>
+	<div ng-controller="nameCalc">
+		<input type="text" ng-model="name"
+											 ng-keyup="dnv()"
+											 ng-blur="upper() || dnv()">
+		<div>
+			total numeric value of the name {{numericValue}}
+		</div>
+	</div>
+
+</body>
+</html>
