@@ -10,7 +10,7 @@
 				$scope.message = "Please enter data first"
 			}
 			else {
-				var word = $scope.list.split(",");
+				var word = $scope.list.split(", ");
 				if (word[3] == undefined) {
 					$scope.message = 'Enjoy!';
 				}
