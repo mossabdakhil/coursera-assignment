@@ -6,14 +6,17 @@
 		$scope.message;
 		$scope.list;
 		$scope.chk = function () {
-			var word = $scope.list.split(" ");
-				$scope.message = 'Please enter data first';
-			}
-			if (word[3] == undefined) {
-				$scope.message = 'Enjoy!';
+			if ($scope.list === undefined) {
+				$scope.message = "Please enter data first"
 			}
 			else {
-				$scope.message = 'Too much!';
+				var word = $scope.list.split(",");
+				if (word[3] == undefined) {
+					$scope.message = 'Enjoy!';
+				}
+				else {
+					$scope.message = 'Too much!';
+				}
 			}
 		}
 	}]);
