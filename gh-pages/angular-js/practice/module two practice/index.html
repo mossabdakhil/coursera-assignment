@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<title></title>
+</head>
+<body>
+<div class="container" ng-controller="myCtrl">
+	<button class="btn btn-primary mt-2" type="button" ng-click="fltr()">click me to test the filter</button>
+	<div>
+		{{Filter1 | currency: "" : 4}}<br>
+		{{Filter2 | uppercase}}<br>
+		{{Filter3()}}<br>
+		here we replaced 'nothing' with 'everything': 
+		{{"third nothing" | Replace}} <br>
+		{{"forth truth" | truth: "forth" : "forth but true"}}
+	</div>
+	<br>
+	<button class="btn btn-warning bordered" ng-click="countOnce()">count once!</button>
+	<button class="btn btn-success bordered" ng-click="count()">count!</button> <br>
+	<div>
+		once counter= {{onceCounter}} !<br>
+		counter= {{counter}} !	
+	</div>
+
+	</div>
+	<script src="angular.min.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>

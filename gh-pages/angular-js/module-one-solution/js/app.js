@@ -10,14 +10,21 @@
 				$scope.message = "Please enter data first"
 			}
 			else {
-				var word = $scope.list.split(", ");
-				if (word[3] == undefined) {
-					$scope.message = 'Enjoy!';
+
+				if ($scope.list === "") {
+				$scope.message = "Please enter data first"
 				}
 				else {
+					var word = $scope.list.split(", ");
+					if (word[3] == undefined) {
+						$scope.message = 'Enjoy!';
+					}
+					else {
 					$scope.message = 'Too much!';
+					}
 				}
 			}
+			console.log($scope.list);
 		}
 	}]);
 })();
