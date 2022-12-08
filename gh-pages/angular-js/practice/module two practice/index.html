@@ -9,6 +9,8 @@
 <body>
 <div class="container" ng-controller="myCtrl">
 	<button class="btn btn-primary mt-2" type="button" ng-click="fltr()">click me to test the filter</button>
+	<br>
+	<button class="btn btn-dark mt-3" ng-click="showNumberOfWatchers()">show the number of watchers</button>
 	<div>
 		{{Filter1 | currency: "" : 4}}<br>
 		{{Filter2 | uppercase}}<br>
@@ -24,9 +26,36 @@
 		once counter= {{onceCounter}} !<br>
 		counter= {{counter}} !	
 	</div>
+	<br>
+	<button class="btn btn-outline-primary mb-3" ng-click="setFullName()">
+		Set full name!
+	</button><br>
+	Full name is: {{ :: fullName }}
+	<br>
+	<button class="btn btn-outline-danger mt-3" ng-click="logFirstName()">Log first name!</button>
+	<button class="btn btn-outline-success mt-3" ng-click="logFullName()">Log full name!</button><br>
+	<input class="mt-3" type="text" ng-model="firstName">
 
+	<div>
+		<h3>ng-repeat directive!</h3>
+	</div>
+	<input type="text" ng-model="shoppingList2[0].quantity">
+	<ul>
+		<li ng-repeat="item in shoppingList2">{{$index + 1}}. buy {{item.quantity}} of {{item.name}}(s)</li>
+	</ul>
+	<input type="text" ng-model="newItemName" placeholder="new item name">
+	<input type="text" ng-model="newItemQuantity" placeholder="new item quantity">
+	<button ng-click="addNewItem()">Add a new item</button> <hr>
+
+	<input type="text" ng-model="search">
+	<ul>
+		<li ng-repeat="item in shoppingList1 | filter : search">
+			{{item}}
+		</li>
+	</ul>
 	</div>
 	<script src="angular.min.js"></script>
 	<script src="app.js"></script>
+	<script src="filter.js"></script>
 </body>
 </html>
