@@ -20,7 +20,15 @@
 				<button ng-click="list.removeItem($index)">Remove</button>
 			</li>
 		</ol>
-		<div class="error">Error: {{list.errorMessage}}</div>
+		<style>
+			.Error {
+				color: red;
+				font-size: 1.3;
+			}
+		</style>
+		<!-- <div class="Error" ng-if="list.errorMessage">Error: {{list.errorMessage}} </div> -->
+		<!-- <div class="Error" ng-show="list.errorMessage">Error: {{list.errorMessage}}</div> -->
+		<div class="Error" ng-hide="!list.errorMessage">Error: {{list.errorMessage}}</div>
 	</div>
 </body>
 </html>
